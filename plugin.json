@@ -1,0 +1,61 @@
+{
+  "id": "com.timetta.link-preview",
+  "name": "Timetta Link Preview",
+  "description": "Shows Timetta entity details for configured frontend links.",
+  "version": "0.3.0",
+  "min_server_version": "6.2.1",
+  "icon_path": "assets/icon.svg",
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "linux-arm64": "server/dist/plugin-linux-arm64",
+      "darwin-amd64": "server/dist/plugin-darwin-amd64",
+      "darwin-arm64": "server/dist/plugin-darwin-arm64",
+      "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+    }
+  },
+  "settings_schema": {
+    "header": "Configure the Timetta frontend links and OData API used to build message previews.",
+    "footer": "Supported frontend entity routes are built into the plugin.",
+    "settings": [
+      {
+        "key": "FrontendURL",
+        "display_name": "Frontend URL",
+        "type": "text",
+        "help_text": "Base URL found in Mattermost messages.",
+        "placeholder": "https://app.timetta.com",
+        "default": "https://app.timetta.com"
+      },
+      {
+        "key": "APIURL",
+        "display_name": "API URL",
+        "type": "text",
+        "help_text": "Timetta API base URL. The plugin appends `/OData/...`.",
+        "placeholder": "https://api.timetta.com",
+        "default": "https://api.timetta.com"
+      },
+      {
+        "key": "BearerToken",
+        "display_name": "Bearer token",
+        "type": "text",
+        "secret": true,
+        "help_text": "Token sent to Timetta as `Authorization: Bearer ...`.",
+        "default": ""
+      },
+      {
+        "key": "RequestTimeoutSeconds",
+        "display_name": "API request timeout (seconds)",
+        "type": "number",
+        "help_text": "Timeout for each Timetta API request (1–30 seconds).",
+        "default": 5
+      },
+      {
+        "key": "MaxPreviewsPerPost",
+        "display_name": "Maximum previews per post",
+        "type": "number",
+        "help_text": "Maximum number of distinct Timetta links enriched in one post (1–10).",
+        "default": 5
+      }
+    ]
+  }
+}

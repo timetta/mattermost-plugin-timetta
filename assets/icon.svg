@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Timetta link preview">
+  <rect width="128" height="128" rx="24" fill="#3155a4"/>
+  <path d="M35 34h58v17H73v49H55V51H35z" fill="#fff"/>
+  <path d="M83 68a13 13 0 0 1 0 26H71v-9h12a4 4 0 1 0 0-8H71v-9zm-38 8a13 13 0 0 1 0-26h12v9H45a4 4 0 1 0 0 8h12v9z" fill="#8fc9ff"/>
+</svg>
