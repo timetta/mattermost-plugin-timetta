@@ -15,6 +15,16 @@ Example recognized link:
 https://app.timetta.com/issue/DEV-4608/main?navigation=my.dev
 ```
 
+## Screenshots
+
+### Link preview
+
+![Timetta link preview](docs/images/link-preview.png)
+
+### Configuration
+
+![Timetta Link Preview configuration](docs/images/configuration.png)
+
 ## Build
 
 Requirements:
